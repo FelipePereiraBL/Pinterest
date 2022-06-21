@@ -45,17 +45,22 @@ main p{
 }
 
 main>img{
-    width: 100%;
+    width: 60%;
     display: block;
     margin: auto;
+}
+
+#img01>img{
+    width: 100%;
 }
 
 .imgParagrafo{
     display: flex;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 .imgParagrafo>img{
-    width: 30%;
+    width: 50%;
 }
 
