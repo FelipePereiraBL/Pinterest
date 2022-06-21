@@ -13,11 +13,12 @@
 
 body{
    background-color: #860707;
-   margin: auto;
+   margin: 0;
 }
 
 header{
     text-align: center;
+    padding-top: 40px;
     background-image: linear-gradient(rgb(212, 94, 94),rgb(196, 78, 78),rgb(165, 41, 41),rgb(134, 20, 20),rgb(121, 14, 14),rgb(95, 5, 5),rgb(56, 2, 2), rgb(14, 0, 0));
     box-shadow: -2px 3px 5px 2px rgb(0 0 0 / 40%);
 }
@@ -29,7 +30,7 @@ h1,h2{
 
 main{
     min-width: 300px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
     background-color: white;
@@ -62,5 +63,6 @@ main>img{
 
 .imgParagrafo>img{
     width: 50%;
+    min-height: 30vh;
 }
 
