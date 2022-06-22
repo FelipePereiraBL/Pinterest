@@ -7,62 +7,87 @@
     --fonte-personalizada: 'Oleo Script Swash Caps', cursive;
 }
 
-*{
-    font-family: var(--fonte-padrao);   
+*{  
+    margin: 0px;
+    padding: 0px;
 }
 
 body{
-   background-color: #860707;
-   margin: 0;
+    background-color: #860707;
+    font-family: var(--fonte-padrao); 
 }
 
 header{
+    max-width: 100%;
+    min-height: 150px;
     text-align: center;
     padding-top: 40px;
     background-image: linear-gradient(rgb(212, 94, 94),rgb(196, 78, 78),rgb(165, 41, 41),rgb(134, 20, 20),rgb(121, 14, 14),rgb(95, 5, 5),rgb(56, 2, 2), rgb(14, 0, 0));
-    box-shadow: -2px 3px 5px 2px rgb(0 0 0 / 40%);
 }
 
-h1,h2{
-    font-family: var(--fonte-personalizada);
-    padding-left: 10px;
+header img{
+   max-width: 100%;
 }
 
 main{
     min-width: 300px;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
     padding: 20px;
     background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
 }
 
-main p{    
+h1,h2{
+    font-family: var(--fonte-personalizada);
+}
+
+p{    
     text-align: justify;
     text-indent: 30px;
     font-size: 1em;
     line-height: 1.2em;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 15px 0px;
 }
 
-main>img{
+/*Todas as imagens da página fora de uma div*/
+main img{
     width: 60%;
     display: block;
     margin: auto;
+    box-shadow: 1px 1px 5px black;
 }
 
-#img01>img{
+/*Primeira imagem da página*/
+#img01img{
     width: 100%;
 }
 
+/*Paragrafos com imagem do lado*/
 .imgParagrafo{
     display: flex;
     align-items: center;
-    padding-bottom: 20px;
 }
 
-.imgParagrafo>img{
+.paragrafos{
     width: 50%;
-    min-height: 30vh;
 }
+
+.imgParagrafo >picture{
+    width: 50%;
+    padding: 10px 20px;
+}
+
+.imgParagrafo picture img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
 
