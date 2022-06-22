@@ -18,8 +18,7 @@ body{
 }
 
 header{
-    max-width: 100%;
-    min-height: 150px;
+    max-width: 100%;  
     text-align: center;
     padding-top: 40px;
     background-image: linear-gradient(rgb(212, 94, 94),rgb(196, 78, 78),rgb(165, 41, 41),rgb(134, 20, 20),rgb(121, 14, 14),rgb(95, 5, 5),rgb(56, 2, 2), rgb(14, 0, 0));
@@ -27,31 +26,49 @@ header{
 
 header img{
    max-width: 100%;
+   height: 150px;
 }
 
 main{
     min-width: 300px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
 }
 
-h1,h2{
+h1{
     font-family: var(--fonte-personalizada);
+    font-size: 1.8em;
+}
+
+h2{
+    font-family: var(--fonte-personalizada);
+    font-size: 1.3em;
 }
 
 p{    
     text-align: justify;
     text-indent: 30px;
     font-size: 1em;
-    line-height: 1.2em;
+    line-height: 2em;
     margin: 15px 0px;
 }
 
+aside{
+    text-align: left;
+    background-color: #eeb0b0;
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px  black ;
+    font-style: italic;
+}
+
 /*Todas as imagens da página fora de uma div*/
-main img{
+main >img{
     width: 60%;
     display: block;
     margin: auto;
@@ -59,8 +76,8 @@ main img{
 }
 
 /*Primeira imagem da página*/
-#img01img{
-    width: 100%;
+#img01img,#img01 img{
+    width: 100%;  
 }
 
 /*Paragrafos com imagem do lado*/
@@ -69,17 +86,31 @@ main img{
     align-items: center;
 }
 
+/*Paragrafos que vão ficar do lado de uma imagem*/
 .paragrafos{
     width: 50%;
 }
 
+/*Picture com imagem que vai ficar do lado de um paragrafo ocupando 50% da largura*/
 .imgParagrafo >picture{
     width: 50%;
     padding: 10px 20px;
 }
 
+/*Imagem vai ocupar 100% da largura da picture*/
 .imgParagrafo picture img{
-    width: 100%;
+    max-width: 100%;
+    box-shadow: 1px 1px 5px black;
+}
+
+/*Rodapé*/
+footer{
+    background-color: rgb(230, 230, 8);
+    font-family: var(--fonte-padrao);
+    font-weight: bolder;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
 }
 
 
