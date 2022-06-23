@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+/*Fonte importada do google-fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
+/*Variaveis de fonte*/
+:root{
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-personalizada: 'Oleo Script Swash Caps', cursive;
+}
+
+/*Zerando margem e espaçamento para configuração manual*/
+*{  
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Corpo da págia*/
+body{
+    background-color: #a1a0a085;
+    font-family: var(--fonte-padrao);
+    position: relative; 
+}
+
+/*Cabeçalho*/
+header{   
+    text-align: center;    
+    background-image: linear-gradient(rgb(240, 5, 5),rgb(220, 5, 5),rgb(200, 5, 5),rgb(180, 5, 5),rgb(160, 5, 5),rgb(140, 5, 5),rgb(120, 5, 5),rgb(100, 5, 5),rgb(80, 5, 5),rgb(60, 5, 5),rgb(40, 5, 5),rgb(20, 5, 5), rgb(0, 5, 5));
+}
+
+/*Imagem do cabeçalho*/
+header img{  
+    min-height: 150px;
+    max-height: 150px;
+}
+
+/*Menu*/
+nav{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.493);
+}
+
+/*Links do menu*/
+nav a{
+    color: white;
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgba(169, 169, 169, 0.219);
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+/*Quando o mouse estiver sobre o link*/
+nav a:hover{
+    background-color: white;
+    color: red;
+}
+
+/*Conteudo principal*/
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 0px;
+    background-color: white;
+    box-shadow: 1.5px 1px 7px rgba(0, 0, 0, 0.664);
+}
+
+/*Titulos grandes*/
+h1{
+    font-family: var(--fonte-personalizada);
+    font-size: 1.8em;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+}
+
+/*Titulos pequenos*/
+h2{
+    font-family: var(--fonte-personalizada);
+    font-size: 1.3em;
+    padding: 0px 20px;
+    margin: 10px;
+}
+
+/*Todos os paragrafos da página*/
+p{    
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+    margin: 15px 0px;
+    padding: 0px 20px;
+}
+
+/*Todas as imagens da página fora de uma div, exceto a primeira*/
+main >img{
+    width: 60%;
+    display: block;
+    margin: auto;
+    box-shadow: 1px 1px 5px black;
+}
+
+/*Primeira imagem da página*/
+#img01img,#img01 img{
+    width: 100%;  
+    padding-top: 20px;
+}
+
+
+/*Links dentro do conteudo principal*/
+main a{
+    color: rgb(63, 4, 4);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*Quando o mouse estiver sobre o link*/
+main a:hover{
+    text-decoration: underline;
+    background-color: rgba(231, 137, 137, 0.185);
+}
+
+
+/*Rodapé*/
+footer{
+    background-color: rgb(230, 230, 8);
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 8px;
+}
+
+footer a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+footer a:hover{
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+}
