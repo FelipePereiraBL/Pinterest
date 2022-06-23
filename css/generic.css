@@ -36,7 +36,6 @@ header img{
 
 /*Menu*/
 nav{
-    display: block;
     position: sticky;
     top: 0;
     background-color: black;
@@ -50,6 +49,7 @@ nav a{
     text-decoration: none;
     font-family: var(--fonte-padrao);
     padding: 10px;
+    margin-bottom: 10px;
     font-weight: bold;
     background-color: rgba(169, 169, 169, 0.219);
     border-radius: 5px;
