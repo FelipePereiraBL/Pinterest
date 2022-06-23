@@ -36,6 +36,7 @@ header img{
 
 /*Menu*/
 nav{
+    line-height: 2.5em;
     position: sticky;
     top: 0;
     background-color: black;
@@ -49,7 +50,6 @@ nav a{
     text-decoration: none;
     font-family: var(--fonte-padrao);
     padding: 10px;
-    margin-bottom: 10px;
     font-weight: bold;
     background-color: rgba(169, 169, 169, 0.219);
     border-radius: 5px;
@@ -78,6 +78,8 @@ h1{
     font-size: 1.8em;
     padding: 0px 20px;
     margin-bottom: 10px;
+    color: rgb(160, 5, 5);
+    background-image: linear-gradient(to right,rgba(107, 68, 68, 0.24),transparent)
 }
 
 /*Titulos pequenos*/
@@ -86,6 +88,7 @@ h2{
     font-size: 1.3em;
     padding: 0px 20px;
     margin: 10px;
+    color: rgb(160, 5, 5);
 }
 
 /*Todos os paragrafos da página*/
