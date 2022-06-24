@@ -96,21 +96,21 @@ p{
     text-align: justify;
     text-indent: 30px;
     font-size: 1em;
-    line-height: 2em;
+    line-height: 1.8em;
     margin: 15px 0px;
     padding: 0px 20px;
 }
 
 /*Todas as imagens da página fora de uma div, exceto a primeira*/
 main >img{
-    width: 60%;
+    width: 90%;
     display: block;
     margin: auto;
     box-shadow: 1px 1px 5px black;
 }
 
 /*Primeira imagem da página*/
-#img01img,#img01 img{
+#img01 img{
     width: 100%;  
     padding-top: 20px;
 }
