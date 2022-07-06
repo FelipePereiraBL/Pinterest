@@ -100,10 +100,14 @@ p{
     margin: 15px 0px;
     padding: 0px 20px;
 }
+/*Palavras destacadas*/
+strong{
+    color: rgb(116, 6, 6);
+}
 
 /*Todas as imagens da página fora de uma div, exceto a primeira*/
 main >img{
-    width: 90%;
+    width: 60%;
     display: block;
     margin: auto;
     box-shadow: 0px 1px 7px  black;
