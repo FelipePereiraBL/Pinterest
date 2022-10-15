@@ -4,7 +4,7 @@
     background-color: #eeb0b059;
     width: 50%;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px  black ;
+    box-shadow: 1px 1px 3px  black ;
     font-style: italic;
     margin-left: 20px;
 }
@@ -15,29 +15,33 @@
     background-color: #aaa9a97c;
     width: 50%;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px  black ;
+    box-shadow: 1px 1px 3px  black ;
     font-style: italic;
 }
 
-/*Paragrafos com uma imagem do lado*/
-.imgParagrafo{
-    display: flex;
-    align-items: center;
-}
+@media screen and (min-width: 768px){
+    
+    /*Paragrafos com uma imagem do lado*/
+    .imgParagrafo{
+        display: flex;
+        align-items: center;
+    }
 
-/*Paragrafos que vão ficar do lado de uma imagem*/
-.paragrafos{
-    width: 50%;
-}
+    /*Paragrafos que vão ficar do lado de uma imagem*/
+    .paragrafos{
+        width: 50%;
+    }
 
-/*Picture com imagem que vai ficar do lado de um paragrafo ocupando 50% da largura*/
-.imgParagrafo >picture{
-    width: 50%;
-    padding: 10px 20px;
-}
+    /*Picture com imagem que vai ficar do lado de um paragrafo ocupando 50% da largura*/
+    .imgParagrafo >picture{
+        width: 50%;
+        padding: 10px 20px;
+    }
 
-/*Imagem vai ocupar 100% da largura da picture*/
-.imgParagrafo picture img{
-    max-width: 100%;
-    box-shadow: 1px 1px 5px black;
+    /*Imagem vai ocupar 100% da largura da picture*/
+    .imgParagrafo picture img{
+        width: 100%;
+        box-shadow: 1px 1px 5px black;
+        
+    }
 }

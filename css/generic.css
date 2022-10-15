@@ -1,37 +1,10 @@
 @charset "UTF-8";
 
-/*Fonte importada do google-fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
-
-/*Variaveis de fonte*/
-:root{
-    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-personalizada: 'Oleo Script Swash Caps', cursive;
-}
-
-/*Zerando margem e espaçamento para configuração manual*/
-*{  
-    margin: 0px;
-    padding: 0px;
-}
-
 /*Corpo da págia*/
 body{
     background-color: #a1a0a085;
     font-family: var(--fonte-padrao);
     position: relative; 
-}
-
-/*Cabeçalho*/
-header{   
-    text-align: center;    
-    background-image: linear-gradient(rgb(240, 5, 5),rgb(220, 5, 5),rgb(200, 5, 5),rgb(180, 5, 5),rgb(160, 5, 5),rgb(140, 5, 5),rgb(120, 5, 5),rgb(100, 5, 5),rgb(80, 5, 5),rgb(60, 5, 5),rgb(40, 5, 5),rgb(20, 5, 5), rgb(0, 5, 5));
-}
-
-/*Imagem do cabeçalho*/
-header img{  
-    min-height: 150px;
-    max-height: 150px;
 }
 
 /*Menu*/
@@ -70,39 +43,6 @@ main{
     padding: 20px 0px;
     background-color: white;
     box-shadow: 1.5px 1px 7px rgba(0, 0, 0, 0.664);
-}
-
-/*Titulos grandes*/
-h1{
-    font-family: var(--fonte-personalizada);
-    font-size: 1.8em;
-    padding: 0px 20px;
-    margin-bottom: 10px;
-    color: rgb(160, 5, 5);
-    background-image: linear-gradient(to right,rgba(107, 68, 68, 0.24),transparent)
-}
-
-/*Titulos pequenos*/
-h2{
-    font-family: var(--fonte-personalizada);
-    font-size: 1.3em;
-    padding: 0px 20px;
-    margin: 10px;
-    color: rgb(160, 5, 5);
-}
-
-/*Todos os paragrafos da página*/
-p{    
-    text-align: justify;
-    text-indent: 30px;
-    font-size: 1em;
-    line-height: 1.8em;
-    margin: 15px 0px;
-    padding: 0px 20px;
-}
-/*Palavras destacadas*/
-strong{
-    color: rgb(116, 6, 6);
 }
 
 /*Todas as imagens da página fora de uma div, exceto a primeira*/
