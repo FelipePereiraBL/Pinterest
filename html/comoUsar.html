@@ -11,17 +11,17 @@
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body  onclick="fecharMenu()" onresize="mudouTamanho()">
-    <header>
+<body onresize="mudouTamanho()">
+    <header onclick="fecharMenu()">
         <img src="../imagens/logo-pinterest.png" alt="Logo do Pinterest" srcset="">
     </header>
 
     <div id="idMenu">
         <div id="iconeMenu">
-            <span class="material-symbols-outlined" onpointerenter="abrirMenu()">menu</span>
+            <span class="material-symbols-outlined" onclick="abrirMenu()">menu</span>
         </div>
         
-        <nav id="listMenu" onpointerleave="fecharMenu()">
+        <nav id="listMenu">
             <ul>
                 <li><a href="../html/index.html">Página Principal</a></li>
                 <li><a href="../html/criarPerfil.html">Como criar um perfil</a></li>
@@ -32,7 +32,7 @@
         </nav>
     </div>
 
-    <main>
+    <main onclick="fecharMenu()">
 
         <h1>Usando a rede social</h1>
 
@@ -101,7 +101,11 @@
         }
 
         function abrirMenu(){
-            listMenu.style.display='block'
+            if(listMenu.style.display=='block'){
+                listMenu.style.display='none'
+            }else{
+                listMenu.style.display='block'
+            }
         }
 
         function fecharMenu(){
