@@ -162,6 +162,26 @@ main a:hover{
     background-color: rgba(231, 137, 137, 0.185);
 }
 
+#iconeWhats {
+    display: none;
+    position:fixed; 
+    width:60px;
+    height:60px;
+
+    bottom:40px;
+    right:40px;
+    
+    background-color:#25d366;
+    color:#FFF;
+
+    border-radius:50px;
+    
+    text-align:center;
+    font-size:30px;
+    
+    box-shadow: 1px 1px 2px #888;
+}
+
 /*Rodapé*/
 footer{
     background-color: rgb(230, 230, 8);
